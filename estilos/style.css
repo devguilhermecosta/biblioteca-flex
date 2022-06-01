@@ -65,7 +65,7 @@ body {
     background-color: var(--cor-menu-hover-background);
     color: black;
     font-weight: bold;
-    transition: ease-in .2s;
+    transition: ease-in .1s;
     box-shadow: 2px 2px 10px 10px var(--cor-menu-hover-shadow);
 }
 
