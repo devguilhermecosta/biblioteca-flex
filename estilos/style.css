@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    src: url('../estilos/fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Parisienne';
+    src: url('../estilos/fonts/Parisienne-Regular.ttf') format('truetype');
+}
+
+:root {
+    --fonttitle: 'Gloria Hallelujah', cursive;
+    --fontbook: 'Parisienne', cursive;
+    --cor-titulo-cabecalho: #ED750C;
+    --cor-menu: #F09D54;
+    --cor-menu-hover-background: #F09D54;
+    --cor-menu-hover-shadow:rgba(255, 166, 0, 0.418);
+    --cor-frase-central: rgb(58, 58, 141); 
+    --cor-link-rodape: orange;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: black;
+    padding-bottom: 15px;
+}
+
+.titulo-cabecalho {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--cor-titulo-cabecalho);
+    font-family: var(--fonttitle);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.cabecalho-menu {
+    text-align: right;
+}
+
+.cabecalho-menu > a {
+    color: var(--cor-menu);
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 10px;
+    font-family: var(--fonttitle);
+    border: 1px solid var(--cor-menu);
+    border-radius: 0px 10px 0px 10px;
+}
+
+.cabecalho-menu > a:hover {
+    background-color: var(--cor-menu-hover-background);
+    color: black;
+    font-weight: bold;
+    transition: ease-in .2s;
+    box-shadow: 2px 2px 10px 10px var(--cor-menu-hover-shadow);
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > .section-img {
+    width: 45%;
+    margin-right: 50px;
+}
+
+.flex-container > .section-img > .img1 {
+    width: 100%;
+    border-radius: 0px 25px 0px 25px;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.section-content {
+    align-self: center;
+    max-width: 300px;
+}
+
+.section-content > p {
+    font-family: var(--fontbook);
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: justify;
+    color: var(--cor-frase-central);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
+}
+
+.section-content > .p2 {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.rodape {
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1;
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+.link-rodape {
+    text-decoration: none;
+    color: var(--cor-link-rodape);
+}
+
+.lista-rodape {
+    text-align: center;
+    padding-left: 0;
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+
+    .titulo-cabecalho {
+        font-size: 8vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container > .section-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        max-width: 70vw;
+    }
+
+    .section-content > p {
+        margin-top: 8vw;
+        font-size: 7vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 4vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 3vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 540px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+
+    .titulo-cabecalho {
+        font-size: 8vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        flex-flow: column wrap;
+    }
+
+    .flex-container > .section-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 60vw;
+    }
+
+    .section-content > p {
+        margin-top: 8vw;
+        font-size: 6vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 3.5vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 2.5vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+
+    .titulo-cabecalho {
+        font-size: 8vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .flex-container > .section-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 60vw;
+    }
+
+    .section-content > p {
+        margin-top: 7vw;
+        font-size: 5vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 2.5vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 1.8vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 850px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+    
+    .titulo-cabecalho {
+        font-size: 6vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        align-self: right;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .flex-container > .section-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 50vw;
+    }
+
+    .section-content > p {
+        margin-top: 5vw;
+        font-size: 3.5vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 2.5vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 1.5vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 960px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+
+    .titulo-cabecalho {
+        font-size: 6vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: right;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        align-self: right;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .flex-container > .section-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 50vw;
+    }
+
+    .section-content > p {
+        margin-top: 5vw;
+        font-size: 3.5vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 2.5vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 1.5vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1000px) {
+    .cabecalho {
+        margin-bottom: 30px;
+    }
+
+    .titulo-cabecalho {
+        font-size: 5vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: right;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        align-self: right;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .flex-container > .section-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 50vw;
+    }
+
+    .section-content > p {
+        margin-top: 5vw;
+        font-size: 3.5vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 2.5vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 1.5vw;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 1141px) and (max-width: 1366px) {
+    .cabecalho {
+        background-color: black;
+        padding-bottom: 0;
+    }
+    .titulo-cabecalho {
+        font-size: 5vw;
+    }
+
+    .cabecalho-menu {
+        text-align: center;
+        display: flex;
+        justify-content: right;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cabecalho-menu > a {
+        align-self: right;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    main {
+        max-width: 840px;
+    }
+
+    .flex-container > .section-img {
+        width: 50%;
+        margin-right: 50px;
+    }
+
+    .section-content {
+        align-self: center;
+        max-width: 30vw;
+    }
+
+    .section-content > p {
+        margin-top: 5vw;
+        font-size: 3vw;
+    }
+
+    .section-content > .p2 {
+        text-align: right;
+        font-size: 2vw;
+    }
+
+    .rodape > p {
+        text-align: center;
+        font-size: 1vw;
+        line-height: 1.6;
+    }
+}
