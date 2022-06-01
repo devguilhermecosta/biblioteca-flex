@@ -123,6 +123,10 @@ main {
     padding: 2px;
 }
 
+.rodape > p {
+    margin: 0;
+}
+
 .link-rodape {
     text-decoration: none;
     color: var(--cor-link-rodape);
@@ -509,7 +513,7 @@ main {
 
     .rodape > p {
         text-align: center;
-        font-size: 1vw;
+        font-size: .8vw;
         line-height: 1.6;
     }
 }
