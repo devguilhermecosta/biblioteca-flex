@@ -19,6 +19,7 @@
     --cor-menu-hover-shadow:rgba(255, 166, 0, 0.418);
     --cor-frase-central: rgb(58, 58, 141); 
     --cor-link-rodape: orange;
+    --cor-texto-acervo: rgb(0, 0, 255);
 }
 
 html, body {
@@ -106,6 +107,44 @@ main {
     align-self: center;
     max-width: 300px;
 }
+
+.acervo-flex-parent {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    gap: 5px;
+    flex-flow: row wrap;
+}
+
+.acervo-flex > p {
+    text-align: center; 
+    margin: 0;
+    padding: 5px;
+    border: 1px solid var(--cor-menu-hover-background);
+    border-bottom: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.acervo-flex-child {
+    display: flex;
+    width: 150px;
+    height: 214px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    border: 1px solid var(--cor-titulo-cabecalho);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.img-acervo {
+    max-width: 100%;
+}
+
 
 .section-content > p {
     font-family: var(--fontbook);
