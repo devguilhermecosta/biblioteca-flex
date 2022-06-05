@@ -137,7 +137,7 @@ main {
     padding-left: 0;
 }
 
-@media (min-width: 280px) and (max-width: 375px) {
+@media screen and (min-width: 280px) and (max-width: 375px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -192,7 +192,7 @@ main {
     }
 }
 
-@media (min-width: 376px) and (max-width: 540px) {
+@media screen and (min-width: 376px) and (max-width: 540px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -245,7 +245,7 @@ main {
     }
 }
 
-@media (min-width: 541px) and (max-width: 720px) {
+@media screen and (min-width: 541px) and (max-width: 720px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -299,7 +299,7 @@ main {
     }
 }
 
-@media (min-width: 721px) and (max-width: 850px) {
+@media screen and (min-width: 721px) and (max-width: 850px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -354,7 +354,7 @@ main {
     }
 }
 
-@media (min-width: 851px) and (max-width: 960px) {
+@media screen and (min-width: 851px) and (max-width: 960px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -409,7 +409,7 @@ main {
     }
 }
 
-@media (min-width: 961px) and (max-width: 1000px) {
+@media screen and (min-width: 961px) and (max-width: 1000px) {
     .cabecalho {
         margin-bottom: 30px;
     }
@@ -464,7 +464,7 @@ main {
     }
 }
 
-@media (min-width: 1141px) and (max-width: 1366px) {
+@media screen and (min-width: 1141px) and (max-width: 1366px) {
     .cabecalho {
         background-color: black;
         padding-bottom: 0;
