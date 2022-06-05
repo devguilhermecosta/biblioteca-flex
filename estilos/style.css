@@ -292,6 +292,14 @@ main {
         margin: 0 auto;
     }
 
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 1.5em;
+        width: 80%;
+    }
+
     .section-content {
         align-self: center;
         max-width: 60vw;
@@ -342,6 +350,14 @@ main {
         padding-top: 30px;
         width: 60%;
         margin: 0 auto;
+    }
+
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 2em;
+        width: 80%;
     }
 
     .section-content {
@@ -396,6 +412,14 @@ main {
         margin: 0 auto;
     }
 
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 2.5em;
+        width: 80%;
+    }
+
     .section-content {
         align-self: center;
         max-width: 50vw;
@@ -446,6 +470,14 @@ main {
         padding-top: 30px;
         width: 60%;
         margin: 0 auto;
+    }
+
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 2.8em;
+        width: 80%;
     }
 
     .section-content {
@@ -500,6 +532,14 @@ main {
     .flex-container > .section-img {
         width: 50%;
         margin-right: 50px;
+    }
+
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 3em;
+        width: 80%;
     }
 
     .section-content {
