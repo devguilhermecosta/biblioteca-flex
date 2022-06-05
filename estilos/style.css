@@ -94,6 +94,14 @@ main {
     box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.342);
 }
 
+.section-text {
+    font-family: var(--fonttitle);
+    color: var(--cor-frase-central);
+    text-align: center;
+    font-size: 25px;
+    width: 600px;
+}
+
 .section-content {
     align-self: center;
     max-width: 300px;
@@ -169,6 +177,14 @@ main {
     .flex-container > .section-img {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 1em;
+        width: 80%;
     }
 
     .section-content {
