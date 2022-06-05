@@ -146,10 +146,6 @@ main {
 }
 
 @media screen and (min-width: 280px) and (max-width: 375px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-
     .titulo-cabecalho {
         font-size: 8vw;
     }
@@ -175,6 +171,7 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 80%;
         margin: 0 auto;
     }
@@ -209,10 +206,6 @@ main {
 }
 
 @media screen and (min-width: 376px) and (max-width: 540px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-
     .titulo-cabecalho {
         font-size: 8vw;
     }
@@ -235,8 +228,17 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 60%;
         margin: 0 auto;
+    }
+
+    .section-text {
+        font-family: var(--fonttitle);
+        color: var(--cor-frase-central);
+        text-align: center;
+        font-size: 1em;
+        width: 80%;
     }
 
     .section-content {
@@ -262,10 +264,6 @@ main {
 }
 
 @media screen and (min-width: 541px) and (max-width: 720px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-
     .titulo-cabecalho {
         font-size: 8vw;
     }
@@ -289,6 +287,7 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 60%;
         margin: 0 auto;
     }
@@ -316,10 +315,6 @@ main {
 }
 
 @media screen and (min-width: 721px) and (max-width: 850px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-    
     .titulo-cabecalho {
         font-size: 6vw;
     }
@@ -344,6 +339,7 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 60%;
         margin: 0 auto;
     }
@@ -371,10 +367,6 @@ main {
 }
 
 @media screen and (min-width: 851px) and (max-width: 960px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-
     .titulo-cabecalho {
         font-size: 6vw;
     }
@@ -399,6 +391,7 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 60%;
         margin: 0 auto;
     }
@@ -425,11 +418,7 @@ main {
     }
 }
 
-@media screen and (min-width: 961px) and (max-width: 1000px) {
-    .cabecalho {
-        margin-bottom: 30px;
-    }
-
+@media screen and (min-width: 961px) and (max-width: 1140px) {
     .titulo-cabecalho {
         font-size: 5vw;
     }
@@ -454,6 +443,7 @@ main {
     }
 
     .flex-container > .section-img {
+        padding-top: 30px;
         width: 60%;
         margin: 0 auto;
     }
