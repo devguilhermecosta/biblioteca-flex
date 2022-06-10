@@ -111,7 +111,6 @@ main {
 .acervo-flex-parent {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 20px;
     justify-content: space-evenly;
     align-items: center;
     align-content: space-around;
@@ -126,31 +125,33 @@ main {
     max-height: 100px;
     justify-content: center;
     align-items: center;
-    width: 152px;
+    width: 250px;
     text-align: center;
     margin: 0;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    border: 1px solid black;
-    border-bottom: 0;
+    padding: 5px;
+    border: 2px solid var(--cor-menu);
+    border-bottom: 0px;
     border-radius: 15px 15px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .acervo-flex-child {
     display: flex;
-    width: 150px;
-    height: 214px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: flex-end;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    background-color: black;
+    box-sizing: border-box;
+    width: 250px;
+    height: 350px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--cor-menu);
+    margin-bottom: 20px;
+    background-color: rgba(211, 211, 211, 0.37);
+    border-radius: 0px 0px 15px 15px;
 }
 
 .img-acervo {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 
