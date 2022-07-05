@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="titulo-cabecalho">MEU ACERVO</h1>
+    <header class="cabecalho" id="cabecalho">
+        <h1 class="titulo-cabecalho">MEU ACERVO PARTICULAR</h1>
+        <input type="checkbox" name="close-menu" id="close-menu" class="close-menu" role="Close Menu" aria-label="Close Menu">
+        <label for="close-menu" class="close-menu-label" title="Close Menu"></label>
         <nav class="cabecalho-menu">
-            <a href="index.html">Home</a>
-            <a href="acervo.html">Acervo</a>
-            <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books" target="_blank">Comprar</a>
-            <a href="https://www.olx.com.br/" target="_blank">Vender</a>
-            <a href="https://www.facebook.com/" target="_blank">Emprestar</a>
-            <a href="sobre.html">Sobre o Acervo</a>
+            <ul type="none" class="cabecalho-menu-itens">
+                <li><a class="link-menu"href="index.html">Home</a></li>
+                <li><a class="link-menu"href="acervo.html">Acervo</a></li>
+                <li><a class="link-menu"href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books" target="_blank">Comprar</a></li>
+                <li><a class="link-menu"href="https://www.olx.com.br/" target="_blank">Vender</a></li>
+                <li><a class="link-menu"href="https://www.facebook.com/" target="_blank">Emprestar</a></li>
+                <li><a class="link-menu"href="sobre.html">Sobre o Acervo</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -143,6 +147,7 @@
             </li>
         </ul>
         <p>Software criado por <strong>Guilherme Costa</strong> | Todos os direitos reservados</p>
+        <a href="#cabecalho" class="back-to-top">TOP</a>
     </footer>
 </body>
 </html>

@@ -22,11 +22,18 @@
     --cor-texto-acervo: rgb(0, 0, 255);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -48,21 +55,52 @@ body {
     font-weight: bolder;
 }
 
-.cabecalho-menu {
-    text-align: right;
+.close-menu, .close-menu-label {
+    width: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cabecalho-menu > a {
+.close-menu {
+    display: none;
+}
+
+.close-menu-label {
+    display: none;
+    background-color: var(--cor-menu-hover-background);
+    color: var(--cor-texto-acervo);
+    padding: 0.1em;
+    font-size: 1.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-left: 89%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-menu-itens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.link-menu {
     color: var(--cor-menu);
     text-decoration: none;
-    margin-right: 25px;
     padding: 10px;
     font-family: var(--fonttitle);
     border: 1px solid var(--cor-menu);
     border-radius: 0px 10px 0px 10px;
 }
 
-.cabecalho-menu > a:hover {
+.link-menu:hover {
     background-color: var(--cor-menu-hover-background);
     color: black;
     font-weight: bold;
@@ -193,22 +231,74 @@ main {
     padding-left: 0;
 }
 
+.back-to-top {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1em;
+    right: 0.5em;
+    font-size: 1.5em;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid var(--cor-link-rodape);
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-menu-hover-background);
+    font-family: var(--fonttitle);
+    font-weight: bolder;
+}
+
 @media screen and (min-width: 280px) and (max-width: 375px) {
     .titulo-cabecalho {
         font-size: 8vw;
     }
 
     .cabecalho-menu {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-flow: row wrap;
+        display: none;
+        width: 100%;
     }
 
-    .cabecalho-menu > a {
-        margin-right: 2vw;
-        margin-bottom: 2vw;
+    .cabecalho-menu-itens {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding-inline-start: 0;
+    }
+
+    .link-menu {
+        color: var(--cor-menu);
+        text-decoration: none;
+        padding: 0;
+        font-family: var(--fonttitle);
+        border: none;
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .link-menu:hover {
+        padding: 0.1em;
+    }
+
+    .close-menu-label {
+        display: flex;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+    }
+
+    .close-menu:checked~.cabecalho-menu {
+        display: flex;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.911);
+        color: var(--cor-menu);
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '✕';
     }
 
     .flex-container {
@@ -259,16 +349,49 @@ main {
     }
 
     .cabecalho-menu {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-flow: row wrap;
+        display: none;
+        width: 100%;
     }
 
-    .cabecalho-menu > a {
-        margin-right: 2vw;
-        margin-bottom: 2vw;
+    .cabecalho-menu-itens {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding-inline-start: 0;
+    }
+
+    .link-menu {
+        color: var(--cor-menu);
+        text-decoration: none;
+        padding: 0;
+        font-family: var(--fonttitle);
+        border: none;
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .link-menu:hover {
+        padding: 0.1em;
+    }
+
+    .close-menu-label {
+        display: flex;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+    }
+
+    .close-menu:checked~.cabecalho-menu {
+        display: flex;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.911);
+        color: var(--cor-menu);
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '✕';
     }
 
     .flex-container {
@@ -317,16 +440,49 @@ main {
     }
 
     .cabecalho-menu {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-flow: row wrap;
+        display: none;
+        width: 100%;
     }
 
-    .cabecalho-menu > a {
-        margin-right: 2vw;
-        margin-bottom: 2vw;
+    .cabecalho-menu-itens {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding-inline-start: 0;
+    }
+
+    .link-menu {
+        color: var(--cor-menu);
+        text-decoration: none;
+        padding: 0;
+        font-family: var(--fonttitle);
+        border: none;
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .link-menu:hover {
+        padding: 0.1em;
+    }
+
+    .close-menu-label {
+        display: flex;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+    }
+
+    .close-menu:checked~.cabecalho-menu {
+        display: flex;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.911);
+        color: var(--cor-menu);
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '✕';
     }
 
     .flex-container {
@@ -376,17 +532,9 @@ main {
     }
 
     .cabecalho-menu {
-        text-align: center;
-        display: flex;
         justify-content: center;
         align-content: center;
         flex-flow: row wrap;
-    }
-
-    .cabecalho-menu > a {
-        align-self: right;
-        margin-right: 2vw;
-        margin-bottom: 2vw;
     }
 
     .flex-container {
@@ -438,7 +586,6 @@ main {
     .cabecalho-menu {
         text-align: center;
         display: flex;
-        justify-content: right;
         align-content: center;
         flex-flow: row wrap;
     }
@@ -493,20 +640,6 @@ main {
 @media screen and (min-width: 961px) and (max-width: 1140px) {
     .titulo-cabecalho {
         font-size: 5vw;
-    }
-
-    .cabecalho-menu {
-        text-align: center;
-        display: flex;
-        justify-content: right;
-        align-content: center;
-        flex-flow: row wrap;
-    }
-
-    .cabecalho-menu > a {
-        align-self: right;
-        margin-right: 2vw;
-        margin-bottom: 2vw;
     }
 
     .flex-container {
